@@ -1,0 +1,408 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #F27B35;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.animation-container {
+  position: fixed;
+  bottom: 15%;
+  left: 94%;
+  transform: translateX(-50%);
+  animation: moveUp 5s linear infinite;
+}
+
+.animation-container-two{
+  position: fixed;
+    bottom: 0;
+    left: 92%;
+    transform: translateX(-50%);
+    animation: moveUp 5s linear infinite;
+}
+
+.animation-container-three{
+position: fixed;
+  bottom: 30%;
+  left: 80%;
+  transform: translateX(-50%);
+  animation: moveUp 5s linear infinite;
+}
+
+.animation-container-four{
+  position: fixed;
+    bottom: 15%;
+    left: 75%;
+    transform: translateX(-50%);
+    animation: moveUp 5s linear infinite;
+}
+
+.animation-container-five{
+  position: fixed;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    animation: moveUp 5s linear infinite;
+}
+.animation-container-six{
+  position: fixed;
+    bottom: 0;
+    left: 65%;
+    transform: translateX(-50%);
+    animation: moveUp 5s linear infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateX(-50%) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-500%);
+  }
+}
+
+
+
+img {
+  width: 70px;
+  height: 70px;
+  height: auto;
+}
+
+
+
+
+
+.metin-wallpaper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.wallpaper-opacity{
+  background-color: rgba(0, 0, 0, 0.408);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.login-container{
+  position: absolute;
+  background-color: white;
+  width: 45%;
+  height: 65%;
+  left: 20px;
+  top: 20px;
+  background-color: #594216d5;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 30px black;
+}
+
+.login-short-game-description{
+  position: absolute;
+  background-color: white;
+  width: 45%;
+  height: 30%;
+  bottom: 10px;
+  left: 20px;
+  background-color: #688c5ed3;
+  box-shadow: inset 0px 0px 30px black;
+  background: linear-gradient(#594216, #688C5E, #732C1D);
+  border-radius: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+
+  .login-container,
+  .login-short-game-description {
+    width: 70%;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .login-container,
+  .login-short-game-description {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .login-container,
+  .login-short-game-description {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .animation-container,
+  .animation-container-two,
+  .animation-container-three,
+  .animation-container-four,
+  .animation-container-five,
+  .animation-container-six {
+    display: none;
+    /* Hide the moving images on smaller screens */
+  }
+
+  .login-container,
+  .login-short-game-description {
+    width: 100%;
+    max-width: none;
+    left: 0;
+  }
+}
+
+/* THE ACTUAL CODE*/
+
+  .login-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #688C5E;
+  }
+
+  .ninja-logo{
+    width: 120px;
+    height: 100px;
+    object-fit: cover ;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .metin-name{
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    font-size: 45px;
+    margin-left: 40px;
+  }
+
+  .assasin-logo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  /* HEADER DONE*/
+
+  .login-line-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .username,
+  .password-div{
+    margin-left: 20px;
+    width: 40%;
+  }
+
+  .user-input,
+  .password-input,
+  .servers{
+    width: 60%;
+    padding: 5px;
+    background-color: #D9C55F;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .code-input{
+    width: 60%;
+    padding: 5px;
+    background-color: #D9C55F;
+    border: none;
+    border-radius: 5px;
+  }
+  .code-input::placeholder,
+  .user-input::placeholder
+  .servers::placeholder,
+  .password-input::placeholder{
+    color: #732C1D;
+  }
+
+  .code,
+  .server-selection-div{
+    width: 40%;
+  }
+
+  .warrior{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .line-one-img{
+    margin-top: 10px;
+  }
+  
+
+  .login-line-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .button-log{
+    padding: 5px;
+      background-color: #D9C55F;
+      border: none;
+      border-radius: 5px;
+      color: #732C1D;
+      width: 70px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+  .log-in-button-div{
+    
+      display: flex;
+      align-self: flex-end;
+  }
+  
+  .button-log:hover{
+    opacity: 0.5;
+  }
+  .button-log:active{
+    margin-bottom: 3px;
+    margin-left: 3px;
+  }
+
+  
+
+.register-frontext{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 5rem;
+}
+.register {
+  display: inline-block;
+  text-decoration: none;
+    color: #F27B35;
+    margin-left: 30px;
+}
+
+
+.divWithLines {
+  position: relative;
+  width: 65%;
+  /* Set the height of your div */
+  /* Set the background color of your div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.line {
+  position: absolute;
+  content: "";
+  width: 43%;
+  height: 2px;
+  /* Set the height of your line */
+  background-color: #D9C55F;
+  /* Set the color of your line */
+}
+
+.line.left {
+  left: 0;
+}
+
+.line.right {
+  right: 0;
+}
+
+
+
+.socials-one{
+  display: inline-block;
+  width: 40%;
+}
+
+
+
+.socials-two{
+display: inline-block;
+
+}
+
+
+
+
+
+.social{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  padding-left: 30px;
+}
+
+.social:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.forgot{
+  position: absolute;
+  right: -130px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forgot-password:hover,
+.need-help:hover{
+  opacity: 0.5;
+}
+
+/* LOGIN CONTAINER DONE*/
+
+
+
+.game-description-two{
+  width: 50%;
+  text-align: right;  
+}
+
+.game-description-img{
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+  display: inline-block;
+  text-align: right;
+}
+
+.dragon{
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.first-description{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #D9C55F;
+  margin-bottom: 4px;
+}
+
+.event-div{
+  position: absolute;
+  bottom: 40px;
+  left: 28%;
+  width: 70%;
+  color: #edde9f;
+}
